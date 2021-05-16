@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <metadati name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/metadati.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Goblin One">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,200&display=swap" rel="stylesheet">
+    <title>Metadati</title>
+    <script type="text/javascript">
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "100vw";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+    }
+    </script>
+    <script src="https://kit.fontawesome.com/31e2ffdcca.js" crossorigin="anonymous"></script>
+  </head>
+
+
+  <body>
+
+    <div class="container-fluid temp-struct">
+      <div class="row">
+        <!-- STICKY NAVBAR -->
+        <div class="col-1 stickysidebar">
+          <!--Aperta-->
+          <div id="mySidebar" class="tenda_lat">
+            <div class="container-fluid">
+              <!--Menu di navigazione-->
+              <nav class="row riga-nav">
+                <div class="closebtn-container">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                </div>
+                <ul class="nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Appendice Critica</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="webprojectplan.html">Il progetto</a>
+                  </li>
+                  <li id="finestrella">
+                    <div class="btn-group collapsed-timeline">
+                      <button class="btn btn-secondary finestr-style" type="button">
+                        <a href="timeline.html" style="padding: 0px 0px 0px 0px;">Timeline</a>
+                      </button>
+                      <button type="button" class="btn btn-secondary finestr-style dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li class="nav-item">
+                          <a class="nav-link" href="item.html">Piazza Fontana</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Memeo</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Omicidio Moro</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+
+
+              <div class="row justify-content-md-center contenitore-immagini">
+                <!--Carousel-->
+                <div id="carouselExampleControls" class="carousel slide" data-interval="false">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="../Immagini/omicidio-moro.jpg" class="d-block w-100" alt="...">
+                      <a href="#">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>L'omicidio di Aldo Moro</h5>
+                          <p>9 Maggio 1978</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../Immagini/attentato-fontana.jpg" class="d-block w-100" alt="...">
+                      <a href="item.html">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Attentato di piazza Fontana</h5>
+                          <p>12 Dicembre 1969</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../Immagini/memeo-spara.jpg" class="d-block w-100" alt="...">
+                      <a href="#">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Memeo spara a Custra</h5>
+                          <p>14 Maggio 1977</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Chiusa-->
+          <div id="tenda">
+            <button class="openbtn" onclick="openNav()">&#9776; <p id="menu-text">Menu</p></button>
+          </div>
+        </div>
+
+
+        <!--Seconda colonna-->
+        <div class="col-11">
+          <!--HEADER-->
+          <div class="row justify-content-md-center intest rounded">
+            <div class="intest-img">
+              <header class="header">
+                <h1>Scatti di violenza politica</h1>
+              </header>
+            </div>
+          </div>
+
+
+          <!-- BREADCRUMBS -->
+          <div class="row justify-content-md-center brd-row">
+            <nav class="brd rounded" aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html" style="color: #999999;">Home</a></li>
+                <li class="breadcrumb-item"><a href="timeline.html" style="color: #999999;">Timeline</a></li>
+                <li class="breadcrumb-item"><a href="item.html" style="color: #999999;">12 Dicembre 1969</a></li>
+                <li class="breadcrumb-item active attivo" aria-current="page">Metadati</li>
+              </ol>
+              <div class="searchbar">
+                <input type="text" placeholder="Cerca nel sito...">
+                <button type="button" class="search-btn">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </nav>
+          </div>
+
+
+          <!--Tabella metadati-->
+          <div class="row riga-meta">
+            <div class="col-1">
+            </div>
+            <div class="col-10 col-di-testo">
+              <h4 class="text-center titolo-testo-item">Metadati dello scatto</h4><br>
+              <table class="table table-dark table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Categoria</th>
+                    <th scope="col">Valore</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Data</td>
+                    <td><a href="#">1969</a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Autore dello scatto</td>
+                    <td><small>Sconosciuto</small></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Luogo</td>
+                    <td><a href="#">Piazza Fontana</a>, <a href="#">Milano</a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Matrice della VP</td>
+                    <td><a href="#">Neofascista</a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>Formato</td>
+                    <td>JPEG</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">6</th>
+                    <td>Soggetto</td>
+                    <td>Interno della Banca dell'Agricoltura</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">7</th>
+                    <td>Provenienza della foto (possessore dei diritti)</td>
+                    <td><a href="http://san.beniculturali.it/web/san/home">Sistema archivistico nazionale (SAN)</a>, <a href="#">Milano</a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">8</th>
+                    <td>Tag descrittivi</td>
+                    <td><a href="#">Matrice Neofascista</a>, <a href="#">Operazione Gladio</a></td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <div class="col-1">
+            </div>
+          </div>
+
+
+
+          <!--FOOTER-->
+          <div class="row footer rounded justify-content-md-center">
+            <div class="col-6 copycol">
+              <p class="text-muted"> © Gabriele Parmeggiani <br> Data creazione: 14-05-2021 | Data aggiornamento: --- <br> Le foto sono usate a scopo non commerciale con licenza creative commons CY-BB</p>
+            </div>
+            <div class="col-3"  id="metanavigaz">
+              <span><a href="#">Note Legali</a> | <a href="#">Contattaci</a></span>
+            </div>
+            <div class="col-3">
+                <a class="btn btn-social-icon btn-instagram">
+                  <span class="fa fa-instagram" style="color: #e4405f;"></span>
+                </a>
+                <a class="btn btn-social-icon btn-facebook">
+                  <span class="fa fa-facebook" style="color: #4267B2;"></span>
+                </a>
+                <a class="btn btn-social-icon btn-twitter">
+                  <span class="fa fa-twitter" style="color: Dodgerblue;"></span>
+                </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+  </body>
+  </html>

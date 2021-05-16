@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/webprojectplan.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Goblin One">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,200&display=swap" rel="stylesheet">
+    <title>Web Project Plan</title>
+    <!--Sidebar script-->
+    <script type="text/javascript">
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "100vw";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+    }
+    </script>
+
+    <!--Script per bottone "torna su"-->
+    <script type="text/javascript">
+    mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
+    <script src="https://kit.fontawesome.com/31e2ffdcca.js" crossorigin="anonymous"></script>
+  </head>
+
+
+  <body>
+
+    <div class="container-fluid temp-struct">
+      <div class="row">
+        <!-- STICKY NAVBAR -->
+        <div class="col-1 stickysidebar">
+          <!--Aperta-->
+          <div id="mySidebar" class="tenda_lat">
+            <div class="container-fluid">
+              <!--Menu di navigazione-->
+              <nav class="row riga-nav">
+                <div class="closebtn-container">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                </div>
+                <ul class="nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Appendice Critica</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active presente rounded" aria-current="page" href="webprojectplan.html">Il progetto</a>
+                  </li>
+                  <li id="finestrella">
+                    <div class="btn-group collapsed-timeline">
+                      <button class="btn btn-secondary finestr-style" type="button">
+                        <a href="timeline.html" style="padding: 0px 0px 0px 0px;">Timeline</a>
+                      </button>
+                      <button type="button" class="btn btn-secondary finestr-style dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li class="nav-item">
+                          <a class="nav-link" href="item.html">Piazza Fontana</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Memeo</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Omicidio Moro</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+
+              <div class="row justify-content-md-center contenitore-immagini">
+                <!--Carousel-->
+                <div id="carouselExampleControls" class="carousel slide" data-interval="false">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="../Immagini/omicidio-moro.jpg" class="d-block w-100" alt="...">
+                      <a href="#">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>L'omicidio di Aldo Moro</h5>
+                          <p>9 Maggio 1978</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../Immagini/attentato-fontana.jpg" class="d-block w-100" alt="...">
+                      <a href="item.html">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Attentato di piazza Fontana</h5>
+                          <p>12 Dicembre 1969</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../Immagini/memeo-spara.jpg" class="d-block w-100" alt="...">
+                      <a href="#">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Memeo spara a Custra</h5>
+                          <p>14 Maggio 1977</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Chiusa-->
+          <div id="tenda">
+            <button class="openbtn" onclick="openNav()">&#9776; <p id="menu-text">Menu</p></button>
+          </div>
+        </div>
+
+
+        <!--Seconda colonna-->
+        <div class="col-11">
+
+          <!--HEADER-->
+          <div class="row justify-content-md-center intest rounded">
+            <div class="intest-img">
+              <header class="header">
+                <h1>Scatti di violenza politica</h1>
+              </header>
+            </div>
+          </div>
+
+
+          <!-- BREADCRUMBS -->
+          <div class="row justify-content-md-center brd-row">
+            <nav class="brd rounded" aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html" style="color: #999999;">Home</a></li>
+                <li class="breadcrumb-item"><a href="#" style="color: #999999;">Il progetto</a></li>
+                <li class="breadcrumb-item active attivo" aria-current="page">Web Project Plan</li>
+              </ol>
+              <div class="searchbar">
+                <input type="text" placeholder="Cerca nel sito...">
+                <button type="button" class="search-btn">
+                  <i class="fas fa-search">
+                  </i>
+                </button>
+              </div>
+            </nav>
+          </div>
+
+
+          <!--PRINCIPALE-->
+          <div class="row">
+            <div class="col-1">
+
+            </div>
+            <!--WPP-->
+            <article class="col-10 wpp">
+              <h3 class="text-center wpp-titolo">Il Web Project Plan</h3>
+              <section class="brief border">
+                <h4>1. Brief</h4>
+                <h5>Obiettivi, finalità, scopo:</h5>
+                <p>Il progetto VIP raccoglie e conserva gli scatti documentari dell'evento noto come "violenza politica" all'interno del contesto italiano degli anni intercorrenti fra il 1969 (bomba di piazza Fontana) e  il 1978 (Omicidio Moro, individuato come apice della tensione civile).
+                Ciò viene fatto in coscienza di un problema avvocato da numerosi storici e giornalisti italiani (bibliografia "Parole e violenza Politica"), cioè la parziale o completa mancanza di un confronto critico fra i cittadini italiani e gli eventi luttuosi di quegli anni, per via del coinvolgimento emotivo della generazione in questione. Si intende quindi cercare di portare all'attenzione un percorso storico-critico e fotografico, comprensivo di una pagina analitica delle categorie concettuali con cui gli anni '70 sono stati descritti.
+                Raggiungere questo obiettivo significa primariamente mettere a disposizione un portale web dalla comunicazione semplice ed efficace che si rivolga tanto alla suddetta generazione quanto a quella più giovane, identificando un contesto scolastico in cui poter diventare strumento.<br>
+                La raccolta, potenzialmente sconfinata, potrà poi contare sulle numerose fondazioni italiane (vedi Fondazione Vera Nocentini) per una digitalizzazione del materiale fisico da loro posseduto, nella creazione di un repositary condiviso.<p>
+                <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-circle-up fa-sm"></i></button>
+                <h5>Utente tipo</h5>
+                <p>L'utenza media viene identificata specificatamente nei due scopi cardine del progetto: da un lato, l'utente che acceda per interesse accademico o scolastico; dall'altro, un qualsiasi cittadino italiano, prevalentemente, mosso dal valor riordinare storicamente quegli anni che nella narrazione comune rimangono confusi.
+                Il primo utente tipo è quindi, ad esempio, un professore nell'atto di un progetto didattico, uno studente superiore a cui sia stato indicato il sito come risorsa oppure ancora uno studente universiario cui sia necessaria una fonte informativa o grafica. <br>
+                Si distinguono tre livelli relativi di catalogazione dell'informazione: la storia in sé attraverso le immagini (per corribile per mezzo della timeline); la storia affrontata dal punto di vista critico (per mezzo dell'appendice); la storia ricostruita organicamente a posteriori (con l'aggiunta di un indice utile a ritrovare risvolti giudiziari e analisi storiche).</p>
+              </section>
+              <section class="benchmark border">
+                <h4>2. Benchmark</h4>
+                <h5>Altri siti sulla violenza politica</h5>
+                <p><strong>Portale "Per non dimenticare":</strong> istituito dal Ministero della Cultura (MIC) e consultabile al <a href="https://www.memoria.san.beniculturali.it/web/memoria/home. ">seguente URL</a>, il sito raccoglie documentazione anche multimediale riguardante i temi della violenza politica, del terrorismo e della criminalità organizzata, con il focus principale di prestare uno spazio di memoria (fisica e metaforica) ai fatti propri di questi fenomeni. Inoltre, il Portale mette in comunicazione fondi e archivi più specifici attraverso una via di accesso privilegiata. Infine, attende e favorisce l'organizzazione di eventi o progetti (scolastici, didattici, pubblici). <br>
+                  L'organizzazione del sito a livello di wireframe può essere considerata piuttosto complessa, tale da includere nello strumento di navigazione primaria una voce specifica che riporta alla mappa stessa del sito. La barra di navigazione secondaria riporta forse un sovrannumero di voci che tende a far deficitare la chiarezza. Non sono presenti breadcrumbs.
+                  D'altro canto il footer dell'homepage è stringato.
+                  E' presente uno strumento simile ad un carousel che tuttavia carica una pagina completamente diversa. <br>
+                  Non essendo un progetto di informatica umanistica il sito non ha degli item foglia specifici, elemento dirimente dal progetto VIP insieme all'intreccio fra fenomeni di matrice diversa, che invece VIP intende separare per quanto possibile.
+                  Le immagini e la documentazione possiedono metadati descrittivi e il corretto rimando ai vari portali ulteriori e specifici.</p>
+                  <p><strong>Il sito "l'alba dei funerali di uno stato":</strong> contiene materiale per lo più giornalistico riguardante 3 attori principali: Aldo Moro, le Brigate Rosse e Giulio Andreotti. Dall'ottima grafica, il sito è ben costruito tra struttura logica delle pagine e disposizione di strumenti di navigazione: viene diviso sia per tematiche che per cronologia storica degli avvenimenti, corredando ogni Item con riassunto delle vicende avvenute o correlate al documento, aggiungendo la possibilità di visionare materiale multimediale e di interagire per mezzo della sezione commenti. <br>La leggibilità è chiara. Sono anche presenti alcuni tag che rimandandano a metadati descrittivi delle risorse.
+                    Tuttavia, il sito è di corto respiro e molto concentrato, gli articoli scritti spaziano fra informazioni ulteriori confondendo il fatto con il giudizio critico dell'autore.
+                    A livello di programmazione, si può prendere esempio dalla struttura del layout e delle scritte realizzate con hover a transizione dal bianco al rosso. </p>
+                  </section>
+                  <section class="struttura border">
+                    <h4>3. Struttura</h4>
+                    <h5>Schema del sito</h5>
+                    <div id="img-schema">
+                      <img src="../Immagini/schema-sito.jpeg" class="img-fluid" alt="Schema del sito">
+                    </div>
+                    <h5 style="padding-top: 20px;">Mappa dei concetti</h5>
+                    <div id="img-mappa">
+                      <img src="../Immagini/mappa-concetti.jpeg" class="img-fluid" alt="Mappa dei concetti fondativi">
+                    </div>
+                    <h5 id="lista-categorie">Categorie degli elementi foglia valutati</h5>
+                    <span>
+                      <ol>
+                        <li>Data di produzione della foto</li>
+                        <li>Autore dello scatto</li>
+                        <li>Luogo della foto</li>
+                        <li>Matrice della violenza politica</li>
+                        <li>Formato dell'oggetto digitale</li>
+                        <li>Soggetto raffigurato</li>
+                        <li>Possessore dei diritti della foto</li>
+                        <li>Eventuali tag descrittivi ulteriori (rimandi al contesto internazionale, sezione di divisione delle matrici)</li>
+                      </ol>
+                    </span>
+                  </section>
+                  <section class="layout border">
+                    <h4>4. Layout</h4>
+                    <h5>Architettura</h5>
+                    <span>
+                      <p>Il sito prevede una <strong>landing page </strong>che rimanda direttamente ai tre topic principali (il progetto VIP, la timeline e l'appendice critica). Si compone dei seguenti elementi</p>
+                      <ol>
+                        <li> Un header con il nome del sito</li>
+                        <li> Una fixed collapsed sidebar a destra che apre il menu di navigazione principale e un carousel con accesso diretto ad item di rilievo. Le voci di navigazione sono "il progetto", "appendice critica" e "timeline".</li>
+                        <li> Una sticky searchbar che permette una rapida navigazione per parole chiave.</li>
+                        <li> Cards con immagine significativa come navigazione contestuale.</li>
+                        <li> Un footer con le informazioni riguardanti i copyright, data di creazione e aggiornamento, i rimandi ai social network del progetto. Nonchè la metanavigazione alle "Note legali" e un link per contattare gli sviluppatori.</li>
+                      </ol>
+                    </span>
+                    <span>
+                      <p>In aggiunta, le <strong>pagine principali</strong> contengono:</p>
+                      <ol>
+                        <li> una navigazione contestuale tramite link.</li>
+                        <li> Briciole di pane navigabili per seguire la mappa del sito, impostate per essere sticky top e sempre visibili a schermo</li>
+                      </ol>
+                      <p>Essendo pensato anche per motivi didattici, si è optato per un'architettura semplice e intuitiva.</p>
+                    </span>
+                      <h5>Wireframe</h5>
+
+                        <div class="row justify-content-md-center">
+                          <p style="padding: 0; text-align: center;">Wireframe della landing page e barra di navigazione principale aperta</p>
+                        </div>
+
+                        <div class="img-wireframe row">
+                          <img src="../Immagini/opennav-wireframe.jpg" class="img-fluid img-wireframe-item" alt="Wireframe della sidebar">
+                          <img src="../Immagini/index-wireframe.jpg" class="img-fluid img-wireframe-item" alt="Wireframe dell'index">
+                        </div>
+
+                      <div class="row">
+                        <p class="col justify-content-md-center" style="padding: 0; text-align: center;">Wireframe pagina dell'item</p>
+                        <p class="col justify-content-md-center" style="padding: 0;">Wireframe della pagina di navigaione "Timeline"</p>
+                      </div>
+
+                      <div class="img-wireframe row">
+                        <img src="../Immagini/item-wireframe.jpg" class="img-fluid img-wireframe-item" alt="Wireframe dell'item">
+                        <img src="../Immagini/timeline-wireframe.jpg" class="img-fluid img-wireframe-item" alt="Wireframe dell'index">
+                      </div>
+                  </section>
+                  <section class="usabilità border">
+                    <h4>5. Usabilità</h4>
+                    <p>Il sito intende puntare alla massima usabilità, realizzando innanzitutto un layout semplice e intuitivo in cui le voci dei link corrisondo alle intestazioni delle pagine di arrivo, mantenendo in tutte le pagine una navigazione in una collapsed sidebar, con l'effetto di separare il contenuto a schermo e la navigazione rendendo la pagina più pulita. Inoltre, sono stati adottati i seguenti accorgimenti:</p>
+                    <ol>
+                      <li>C'è coerenza di wireframe fra le pagine, con header, footer, navigazione principale e briciole di pane sempre nelle stesse posizioni</li>
+                      <li>I colori adottati (bianco su sfumature di nero come principali) rispettano i termini di leggibilità insieme a dimensioni dei font per lo più a 16 pixel</li>
+                      <li>Per estendere l'accessibilità ad utenti con alterata visione dei colori, oltre al bianco e al nero la cui variazione non comporta limitazioni, è stata adottata una struttura a tre colori secondari (codici HEX: #01295F, #690000, #EEE826) le cui variazioni in vari disturbi discromatici sono state testate per la migliore usabilità</li>
+                      <li>I colori, inoltre, rimandano sia semanticamente a una colorazione della pagina in bianco e nero, con parallelo alle foto e al concept di rielaborazione storica; ma rimandano anche sintatticamente ad elementi precisi dello schermo tramite attributo :hover : #01295F riporta agli elementi attivabili come link o menu; #690000 riporta a semplici elementi colorabili; #EEE826 mette in evidenza</li>
+                      <li>La maggior parte degli elementi del sito rispondono correttamente a test riguardanti il layout responsivo. Inoltre il sito è correttamente visualizzabile sui browser Google Chrome, Windows Explorer, Microsoft Edge, Firefox</li>
+                    </ol>
+                  </section>
+                  <section class="servizi border">
+                    <h4>6. Servizi</h4>
+                    <p>La navigazione viene implementata ed ampliata con l'aggiunta di servizi per migliorare la fruizione dei contenuti quali:</p>
+                    <ol>
+                      <li>Una pagina di navigazione con linea del tempo (codice di ispirazione dal framework W3School)</li>
+                      <li>Un carousel realizzato con Bootstrap per raggiungere items di rilievo.</li>
+                      <li>Si ipotizza una creazione di una pagina di navigazione globale attraverso filtri a faccette quali "per data", "per matrice", "per luogo"</li>
+                    </ol>
+                    <p>Inoltre, vengono aggiunti:</p>
+                    <ul>
+                      <li>Buttons, di download o rimando</li>
+                      <li>Dropdown nella navigazione principale</li>
+                      <li>Una searchbar affianco alle briciole di pane sticky top</li>
+                      <li>Uno scroll to top button nelle pagine il cui contenuto eccede il viewport</li>
+                      <li>Icone di rimando alle pagine social</li>
+                    </ul>
+                    <p>Si vuole inoltre implementare una sezione per il rapporto con l'utenza in modo da mantenere i contatti o permettere il download di formati TIFF, nonchè per consentire di donare al progetto scatti inediti.</p>
+                  </section>
+                  <section class="bibliografia border">
+                    <h4>7. Bibliografia</h4>
+                    <ol>
+                      <li> <a href="https://www.w3schools.com/" title="Sito del WWW Consortium, framework w3school">W3Scool</a> per i servizi.</li>
+                      <li> <a href="https://getbootstrap.com/docs/5.0/components/accordion/" title="Sito dei docs bootstrap">Bootstrap</a> per il layoute responsive.</li>
+                      <li> <a href="https://coolors.co/" title="coolors, creaione di palette e color picker">Coolors</a> per la creazione delle palette cromatiche.</li>
+                      <li> <a href="https://www.freecodecamp.org/" title="freecodecamp">Free Code Camp</a> per il sistama grid in html.</li>
+                      <li> <a href="https://www.lucidchart.com/pages/" title="lucidchart">Lucidchart</a> per le mappe concettuali.</li>
+                      <li> <a href="https://fontawesome.com/" title="FontAwesome">FontAwesome</a> per le icone.</li>
+                      <li> <a href="https://fonts.google.com/" title="Font di Google">Google Font</a> per le font-family.</li>
+                      <li> <a href="https://www.memoria.san.beniculturali.it/web/memoria/" title="Portale sulla violenza politica italina">Per non dimenticare</a></li>
+                      <li> <a href="https://www.albadeifuneralidiunostato.org/" title="Blog su Brigate rosse e Aldo Moro">L'alba dei funerali di uno stato</a></li>
+                      <li> Vinci Anna Maria, Battelli Giuseppe, <i>"Parole e violenza politica. Gli anni Settanta del Novecento italiano"</i>, 2014, Carrocci.</li>
+                    </ol>
+                  </section>
+                </article>
+                <div class="col-1">
+
+                </div>
+              </div>
+
+
+              <!--FOOTER-->
+              <div class="row footer rounded justify-content-md-center">
+                <div class="col-6 copycol">
+                  <p class="text-muted"> © Gabriele Parmeggiani <br> Data creazione: 14-05-2021 | Data aggiornamento: --- <br> Le foto sono usate a scopo non commerciale con licenza creative commons CY-BB</p>
+                </div>
+                <div class="col-3"  id="metanavigaz">
+                  <span><a href="#">Note Legali</a> | <a href="#">Contattaci</a></span>
+                </div>
+                <div class="col-3">
+                    <a class="btn btn-social-icon btn-instagram">
+                      <span class="fa fa-instagram" style="color: #e4405f;"></span>
+                    </a>
+                    <a class="btn btn-social-icon btn-facebook">
+                      <span class="fa fa-facebook" style="color: #4267B2;"></span>
+                    </a>
+                    <a class="btn btn-social-icon btn-twitter">
+                      <span class="fa fa-twitter" style="color: Dodgerblue;"></span>
+                    </a>
+                </div>
+              </div>
+
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+  </body>
+  </html>

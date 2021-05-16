@@ -259,6 +259,9 @@ text-align: center;
 .card-img-container {
   max-height: 200px;
 }
+#card-img-top {
+  max-height: 200px;
+}
 .card-img {
   max-height: 160px;
 }

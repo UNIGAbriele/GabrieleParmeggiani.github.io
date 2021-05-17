@@ -219,7 +219,6 @@ color: white;
 /* PRINCIPALE */
 .wpp {
   margin-top: 50px;
-
 }
 .wpp-titolo {
   font-family: 'Goblin One', 'Montserrat', sans-serif;
@@ -241,6 +240,12 @@ color: white;
 }
 .benchmark, .struttura, #lista-categorie, .layout, .usabilità , .bibliografia{
   padding-top: 15px;
+}
+.benchmark, .struttura, #lista-categorie, .layout, .usabilità , .bibliografia a {
+  color: #01295F;
+}
+.benchmark, .struttura, #lista-categorie, .layout, .usabilità , .bibliografia a:hover {
+  color: #EEE826;
 }
 #img-schema {
   max-height: 70%;
@@ -289,6 +294,9 @@ color: white;
 .img-wireframe-item {
   max-width: 50%;
   max-heigt: 35%;
+}
+.bibliografia {
+  padding-bottom: 20px;
 }
 
 /* FOOTER */

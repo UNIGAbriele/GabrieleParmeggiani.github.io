@@ -244,9 +244,6 @@ color: white;
 .benchmark, .struttura, #lista-categorie, .layout, .usabilità , .bibliografia a {
   color: #01295F;
 }
-.benchmark, .struttura, #lista-categorie, .layout, .usabilità , .bibliografia a:hover {
-  color: #EEE826;
-}
 #img-schema {
   max-height: 70%;
   max-width: 100%;

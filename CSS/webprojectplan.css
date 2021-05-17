@@ -241,8 +241,11 @@ color: white;
 .benchmark, .struttura, #lista-categorie, .layout, .usabilità , .bibliografia{
   padding-top: 15px;
 }
-.benchmark, .struttura, #lista-categorie, .layout, .usabilità , .bibliografia a {
+a {
   color: #01295F;
+}
+a:hover {
+  color: #EEE826;
 }
 #img-schema {
   max-height: 70%;
